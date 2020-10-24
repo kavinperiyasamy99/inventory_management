@@ -14,6 +14,7 @@ import java.util.Date;
 @Builder
 public class UserDto implements Serializable {
 
+    private Long userId;
     private String userName;
     private String password;
     private String email;

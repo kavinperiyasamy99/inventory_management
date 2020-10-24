@@ -1,7 +1,7 @@
 package com.inventory.config;
 
 import com.inventory.filter.JwtFilter;
-import com.inventory.service.CustomUserDetailsService;
+import com.inventory.service.ValidateUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +21,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private CustomUserDetailsService userDetailsService;
+    private ValidateUser userDetailsService;
 
     @Autowired
     private JwtFilter jwtFilter;

@@ -1,5 +1,6 @@
 package com.inventory.entity;
 
+import com.inventory.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -56,6 +57,11 @@ public class UserDetails implements Serializable {
 
 	@Column(name = "role")
 	private String role;
+
+	@Builder.Default
+	@Enumerated(EnumType.STRING)
+	@Column(name = "status")
+	private Status status=Status.Active;;
 
 	@Column(name = "created_on")
 	private Date createdOn;

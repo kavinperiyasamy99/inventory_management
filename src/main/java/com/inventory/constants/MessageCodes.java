@@ -31,11 +31,17 @@ public class MessageCodes {
     public static final String HEALTH_CHECK_RES_DESC = "Health check successful";
     
     //Custom
+	public static final String INVALID_STATUS = "Invalid status passed";
     public static final String NO_INFO_AVAILABLE = "No Information Available";
     public static final String NO_DATA_AVAILABLE = "No Data Found.";
 	public static final String SUCCESS_DESC = "request processed successfully.";
 	public static final String SO_PREFIX = "SO-";
 	public static final String TRUE = "true";
+
+	public static final String DEALER = "D-";
+	public static final String PAYMENT = "P-";
+	public static final String PRODUCT = "P-";
+	public static final String BILL = "B-";
 
 }
 
